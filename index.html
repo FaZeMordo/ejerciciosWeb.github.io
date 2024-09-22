@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    
+    <h1>EJERCICIOS WEB</h1> 
+    <br>
+    <div class="ejercicio1">
+        <h2>¿Cuanto rendimiento obtendras de tu dinero?</h2>
+        <h3>Tenemos una tasa del 2% mensual!!!!</h3>
+        <p>¿Cuanto dinero invertiste?</p>
+        <input name="dineroIngresado" id="dineroIngresado" type="text">
+        <br>
+        <p>¿A cuantos meses deseas invertir tu dinero?</p>
+        <input name="mesesDinero" id="mesesDinero" type="text">
+        <br><br>
+        <button onclick="calcularRendimiento()">Calcular</button>
+    </div>
+    <br><br><br>
+    <div class="ejercicio2">
+
+        <h2>Ingresos, comisiones, ventas</h2>
+        <br>
+        <p>Ingrese su sueldo</p>
+        <input name="sueldo" id="sueldo" type="text">
+        <p>Ingrese el monto de su primera venta</p>
+        <input name="monto1" id="monto1" type="text">
+        <p>Ingrese el monto de su segunda venta</p>
+        <input name="monto2" id="monto2" type="text">
+        <p>Ingrese el monto de su tercera venta</p>
+        <input name="monto3" id="monto3" type="text">
+        <br><br>
+        <button onclick="calcularSueldo()">Calcular</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio3">
+
+        <h2>OFRECEMOS UN DESCUENTO DEL 15% EN CUALQUIER COMPRA</h2>
+        <p>Ingresa el monto de tu compra</p>
+        <input name="montoCompra" id="montoCompra" type="text">
+        <br><br>
+        <button onclick="calcularPorcentaje()">Calcular</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio4">
+
+        <h2>Calcula la calificacion final</h2>
+        <p>Use numeros del 0-10!!</p>
+        <p>Coloque la calificacion de sus 3 parciales</p>
+        <p>Parcial 1</p>
+        <input name="parcial1" id="parcial1" type="text">
+        <p>Parcial 2</p>
+        <input name="parcial2" id="parcial2" type="text">
+        <p>Parcial 3</p>
+        <input name="parcial3" id="parcial3" type="text">
+        <p>Introduzca la calificacion del examen final</p>
+        <input name="califexam" id="califexam" type="text">
+        <p>Introduzca la calificacion del trabajo final</p>
+        <input name="califfinal" id="califfinal" type="text">
+        <button onclick="calcularCalificacion()">Calcular</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio5">
+
+        <h2>Calcula tu edad</h2>
+        <p>Que dia naciste?</p>
+        <input type="date" id="fecha" name="fecha">
+        <br><br>
+        <button onclick="calcularFecha()">Calcular edad</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio6">
+
+        <h2>Convertir palabras a números</h2>
+    
+    <p>Escribe palabras separadas por comas (ej. uno, dos, tres)</p><br>
+    <input type="text" id="inputPalabras" placeholder="uno, dos, tres"><br><br>
+    
+    <button onclick="convertirPalabras()">Convertir</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio7">
+
+        <h2>Cálculo de Pago</h2>
+    
+        <p>Introduce sueldo por horas</p>
+        <input type="number" id="inputSueldo" placeholder="Sueldo por hora"><br><br>
+        
+        <label for="inputHorasTrabajadas">Introduce el total de horas trabajadas:</label><br>
+        <input type="number" id="inputHorasTrabajadas" placeholder="Horas trabajadas"><br><br>
+    
+    <button onclick="calcularPago()">Calcular Pago</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejericicio8">
+
+    <h1>Cálculo de Utilidad</h1>
+    
+    <label for="inputSalario">Introduce tu salario mensual:</label><br>
+    <input type="number" id="inputSalario" placeholder="Salario mensual"><br><br>
+    
+    <label for="inputAntiguedad">Introduce tu antigüedad en años:</label><br>
+    <input type="number" id="inputAntiguedad" placeholder="Antigüedad en años"><br><br>
+    
+    <button onclick="calcularUtilidades()">Calcular</button>
+
+    </div>
+    <br><br><br>
+    <div class="ejercicio9">
+
+    <h1>Formulario de Registro</h1>
+    <form id="registroForm">
+        Nombre: <input type="text" id="nombre" required><br><br>
+        Email: <input type="text" id="email" required><br><br>
+        Contraseña: <input type="password" id="password" required><br><br>
+        Comentarios: <textarea id="comentarios" required></textarea><br><br>
+        Acepto las condiciones del servicio <input type="checkbox" id="aceptar" required><br><br>
+        <button onclick="Register()">Registrar</button>
+    </form>
+
+    </div>
+
+
+    
+
+</body>
+</html>
